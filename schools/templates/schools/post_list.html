@@ -11,7 +11,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{% static 'css/schools.css' %}">
+  <style>
+    #intro {
+      background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+      height: 115vh;
+    }
 
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #intro {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+  </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -224,6 +240,7 @@
     <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
     <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
     <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+    <a href="http://www.youtube.com"><i class="fa fa-3x fa-youtube-square"></i></a>
   </div>
 </div>
 <div class="footer-copyright text-center py-3"> @ 2021 Copyright:
