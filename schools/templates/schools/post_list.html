@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/schools.css' %}">
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark text-white fixed-top"> 
+        <a class="navbar-brand" >
+          {% load static %} <img src="{% static "schools/images/1.jpeg" %}" alt="home" style="width:80px;" />
+        </a>       
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="tab" href="{% url 'post_list' %}">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ABOUT US</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">School History</a>
+              <a class="dropdown-item" href="#">Board Of Governers</a>
+              <a class="dropdown-item" href="#">Administrators</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">STAFF</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Teaching Staff</a>
+            <a class="dropdown-item" href="#">Non Teaching Staff</a>
+            <a class="dropdown-item" href="#">Support Staff</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ADMISSION</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">S.1 Application</a>
+          <a class="dropdown-item" href="#">S.5 Application</a>
+        </div>
+    </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ACADEMICS</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Subjects Offered</a>
+              <a class="dropdown-item" href="#">Departments</a>
+              <a class="dropdown-item" href="#">Awards And Scholarships</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SCHOOLS</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Bukedea Lifeline secondary school</a>
+            <a class="dropdown-item" href="#">Bukedea Lifeline primary school</a>
+            
+          </div>
+      </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="{% url 'Elearning' %}">E-LEARNING</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#">CONTACT</a>
+          </li>
+    </ul>
+</nav>
+</div>
+  
+<!-- Adding slidding images-->
+<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      {% load static %} <img src="{% static "life/images/2.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>S.1 Career Guidance</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      {% load static %} <img src="{% static "life/images/3.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Deputy HeadTeacher</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      {% load static %} <img src="{% static "life/images/4.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home"  />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>School Compound</h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> <!-- End of sliding images-->
+
+<div class="container-sm">
+<div class="row" >
+  <div class="card-body bg-dark text-white" style="width: 10rem;">
+    <h5 class="card-title">Vision</h5>
+    <p class="card-text">To be at the helm of producing competent human resources to serve the church , State and the World. </p>
+  </div>
+  <div class="card-body bg-primary text-white" style="width: 10rem;">
+    <h5 class="card-title">Mission</h5>
+    <p class="card-text">To provide quality Education through Practical skills, Teamwork, Self-reliance and produce God fearing persons.</p>
+  </div>
+  <div class="card-body bg-success text-white" style="width: 10rem;">
+    <h5 class="card-title">Core Values</h5>
+    <p class="card-text">Fearing God, Respect of persons and Property, Integrity.</p>
+  </div>
+  <div class="card-body bg-secondary text-white" style="width: 10rem;">
+    <h5 class="card-title">Motto</h5>
+    <p class="card-text">Trust in God and Toil To Excel</p>
+  </div>
+</div>
+</div>
+
+<div class="container-md">
+<div class="row">
+<div class="card-body bg-secondary text-white rounded" style="width: 20rem;">
+<h5 class="card-title">Welcome to Bukedea Lifeline Schools</h5>
+<p>Greetings in the name of our Lord Jesus Christ! 
+  Bukedea Lifeline schools, located on Okunguro Road kide North Cell Bukedea Town council, Bukedea District, was founded in 2004 by......... making it the oldest private school in the district.
+  It is a co-educational private school with a current ratio of 1:2 girls to boys.   
+  It offers general academic subjects, 15 in number. The school, admits students of all faiths. 
+  It provides secular education which is in line with the Uganda national goals and objectives of education.
+  The school recognizes the changing global trends and has always organised and re-organised its curriculum to suit the needs of the changing  world, aligning it with the national curriculum.
+</p>
+</div>
+<div class="card-body bg-light" style="width: 20px;">
+  <h5 class="card-title">School News</h5>
+  <div class="col-sm-4">
+    {% for post in posts %}
+    
+    {% endfor %}
+  </div>
+  </div>
+</div>
+</div>
+
+<diV class="container-sm bg-light border-0">
+  <h1 style="text-align: center;">School News</h1>
+<div class="row">
+<div class="col-sm-4">
+  {% for post in posts %}
+  <article>
+      <time>published: {{ post.published_date }}</time>
+      <h2><a href="">{{post.title}}</a></h2>
+      <p>{{ post.text|linebreaksbr }} </p>
+  </article>
+  {% endfor %}
+</div>
+</div>
+</diV>
+
+<!--footer-->
+<footer class="page-footer font-small bg-dark text-white pt-4">
+<div class="container-fluid text-center text-md-left">
+<div class="row">
+<div class="col-md-6 mt-md-0 mt-3">
+  {% load static %} <img src="{% static "schools/images/1.jpeg" %}" alt="home" style="width:80px;" />
+<h5 class="text-uppercase">Bukedea LifeLine Schools</h5>
+<p>Trust in God and Toil Toil To Excel</p>
+</div>
+<div class="col-md-3 mb-md-0 mb-3">
+<h5 class="text-uppercase">Links</h5>
+<ul class="list-unstyled">
+<li>
+  <a href="#" >School History</a>
+</li>
+<li>
+  <a href="#" >Board Of Governers</a>
+</li>
+<li>
+  <a href="#" > Administrators</a>
+</li>
+<li>
+  <a href="#" >GALLERY</a>
+</li>
+</ul>
+</div>
+<div class="col-md-3 mb-md-0 mb-3">
+  <h5 class="text-uppercase">Links</h5>
+  <ul class="list-unstyled">
+  <li>
+    <a href="#" >CContact</a>
+  </li>
+  <li>
+    <a href="/Elearning" >E-Learning</a>
+  </li>
+  <li>
+    <a href="#" >Departments</a>
+  </li>
+  <li>
+    <a href="#" >Admissions</a>
+  </li>
+  </ul>
+  </div>
+</div>
+</div>
+
+<!-- Social buttons -->
+<div class="container">
+  <div class="wrapper">
+    <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
+    <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+    <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+  </div>
+</div>
+<div class="footer-copyright text-center py-3"> @ 2021 Copyright:
+<a href="https://bukedealifeline.ac.ug">bukedealifeline.ac.ug</a>
+</div>
+</footer>
+</body>
+</html>
