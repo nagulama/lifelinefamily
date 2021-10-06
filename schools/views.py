@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Post, File
 from django.utils import timezone
 
 # Create your views here.
@@ -11,8 +11,15 @@ def Elearning(request):
     return render(request,'schools/Elearning.html')
 
 def Seniorone(request):
-    return render(request, 'schools/Seniorone.html')
-
+    # Store most recent uploaded file    
+    file = File.objects.latest('id')  
+    # Store file name (Whatever you called it inside your db)
+    file_name = file.name
+    actual_file = file.actual_file
+    return render(request, "schools/Seniorone.html", {   
+        "file": actual_file,
+        "name": file_name
+    })
 def Seniortwo(request):
     return render(request, 'schools/Seniortwo.html')
     
@@ -27,3 +34,5 @@ def Seniorfive(request):
     
 def Seniorsix(request):
     return render(request, 'schools/Seniorsix.html')
+def Online(request):
+    return render(request, 'schools/Online.html')

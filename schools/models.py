@@ -3,6 +3,10 @@ from django.conf import settings
 from django.utils import timezone
 
 # Create your models here.
+class File(models.Model):
+    name = models.CharField(max_length=64)
+    actual_file = models.FileField(upload_to='files')
+
 class Post(models.Model):
     auther = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)

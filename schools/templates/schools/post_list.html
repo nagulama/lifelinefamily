@@ -58,9 +58,8 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ADMISSION</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">S.1 Application</a>
-          <a class="dropdown-item" href="#">S.5 Application</a>
-        </div>
+          <a class="dropdown-item" data-bs-toggle="tab" href="{% url 'Online' %}">Online Application</a>
+         </div>
     </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ACADEMICS</a>
@@ -73,8 +72,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SCHOOLS</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Bukedea Lifeline secondary school</a>
-            <a class="dropdown-item" href="#">Bukedea Lifeline primary school</a>
+            <a class="dropdown-item" data-bs-toggle="tab" href="{% url 'post_list' %}">Secondary school</a>
+            <a class="dropdown-item" href="#">Primary school</a>
             
           </div>
       </li>
@@ -218,7 +217,7 @@
   <h5 class="text-uppercase">Links</h5>
   <ul class="list-unstyled">
   <li>
-    <a href="#" >CContact</a>
+    <a href="#" >Contact</a>
   </li>
   <li>
     <a href="/Elearning" >E-Learning</a>
