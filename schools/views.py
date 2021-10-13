@@ -12,10 +12,10 @@ def Elearning(request):
 
 def Seniorone(request):
     # Store most recent uploaded file    
-    file = File.objects.latest('id')  
+    files = File.objects.latest('id')  
     # Store file name (Whatever you called it inside your db)
-    file_name = file.name
-    actual_file = file.actual_file
+    file_name = files.name
+    actual_file = files.actual_file
     return render(request, "schools/Seniorone.html", {   
         "file": actual_file,
         "name": file_name

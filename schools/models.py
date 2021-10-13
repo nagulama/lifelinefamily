@@ -8,8 +8,9 @@ class File(models.Model):
     actual_file = models.FileField(upload_to='files')
 
 class Post(models.Model):
-    auther = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
+    text = models.TextField(null=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
