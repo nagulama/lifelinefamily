@@ -100,19 +100,19 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      {% load static %} <img src="{% static "schools/images/2.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home" />
+      {% load static %} <img src="{% static "schools/images/2.jpg" %}" class="d-block img-fluid w-100 img-rounded" style="height: 600px;" alt="home" />
       <div class="carousel-caption d-none d-md-block">
         <h5>S.1 Career Guidance</h5>
       </div>
     </div>
     <div class="carousel-item">
-      {% load static %} <img src="{% static "schools/images/3.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home" />
+      {% load static %} <img src="{% static "schools/images/3.jpg" %}" class="d-block img-fluid w-100 img-rounded" style="height: 600px;" alt="home" />
       <div class="carousel-caption d-none d-md-block">
         <h5>Deputy HeadTeacher</h5>
       </div>
     </div>
     <div class="carousel-item">
-      {% load static %} <img src="{% static "schools/images/4.jpg" %}" class="d-block w-100" style="height: 600px;" alt="home"  />
+      {% load static %} <img src="{% static "schools/images/4.jpg" %}" class="d-block img-fluid w-100 img-rounded" style="height: 600px;" alt="home"  />
       <div class="carousel-caption d-none d-md-block">
         <h5>School Compound</h5>
       </div>
@@ -127,6 +127,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div> <!-- End of sliding images-->
+
+
 
 <div class="container-sm">
 <div class="row" >
@@ -172,15 +174,15 @@
 </div>
 </div>
 
-<diV class="container-sm bg-light border-0">
-  <h1 style="text-align: center;">School News</h1>
+<diV class="container-sm background-color: rgba(255,0,0,0.1); border-0">
+  <h1 style="text-align: center;">Latest News</h1>
 <div class="row">
-<div class="col-sm-4">
+<div class="col-sm-4 ">
   {% for post in posts %}
-  <article>
-      <time>published: {{ post.published_date }}</time>
-      <h2><a href="">{{post.title}}</a></h2>
-      <p>{{ post.text|linebreaksbr }} </p>
+  <article class="card-body bg-dark rounded mb-3 text-white">
+    <h2><a href="">{{post.title}}</a></h2> 
+    <time>published: {{ post.published_date }}</time>
+    <p>{{ post.text|linebreaksbr }} </p>
   </article>
   {% endfor %}
 </div>
