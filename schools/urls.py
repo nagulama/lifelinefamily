@@ -12,5 +12,6 @@ urlpatterns = [
     path('Seniorfive/', views.Seniorfive, name='Seniorfive'),
     path('Seniorsix/', views.Seniorsix, name='Seniorsix'),
     path('Online/', views.Online, name='Online'),
+    path('contact/', views.contact, name='contact'),
 ]
 

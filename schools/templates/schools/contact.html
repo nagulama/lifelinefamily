@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Online Application</title>
+  <title>Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,10 +11,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{% static 'css/schools.css' %}">
+  <script src="https://kit.fontawesome.com/d95b7b9c43.js" crossorigin="anonymous"></script>
   <style>
     #intro {
       background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
-      height: 40vh;
+      height: 115vh;
     }
 
     /* Height for devices larger than 576px */
@@ -58,7 +59,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ADMISSION</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="{% url 'Online' %}">Online Application</a>
+          <a class="dropdown-item" data-bs-toggle="tab" href="{% url 'Online' %}">Online Application</a>
          </div>
     </li>
           <li class="nav-item dropdown">
@@ -89,184 +90,27 @@
     </ul>
 </nav>
 </div>
-
-<div class="mt-4 p-5 bg-primary text-white rounded pb-4 d-flex align-items-end"">
-  <h1 >Welcome to the Elearning Platform</h1>
- </div>
-   <div class="container d-flex align-items-center justify-content-center text-center h-100">
-        <div class="text-white">
-        <p style="font-size: large;"></p>
-        </div>
-    </div>
-    <div id="intro" class="bg-image shadow-2-strong">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
-          <div class="text-white">
-     <div class="container">
-      <div class="col">
-        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeRCb56NfOuehqEEvE4vaNZfbhtxKmgCSMOJXkLrV69iIxmQA/viewform?usp=sf_link">
-      <div class="card-body bg-dark text-white rounded-pill text-center m-3 pb-8">
-      <h5>Apply Now for Olevel</h5>
+<div id="intro" class="bg-image shadow-2-strong">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container d-flex align-items-center justify-content-center text-center h-100">
+      <div class="text-white">
+      <p style="font-size: large;">You can Talk To Us</p>
       </div>
-      </a>
-      <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdVy5d11fSw1KCrLHiHWO3JICrPDsqY4Fw1SdwTMlzfwD-FBw/viewform?usp=sf_link">
-      <div class="card-body bg-dark text-white rounded-pill text-center m-3 pb-8">
-          <h5>Apply Now for Alevel</h5>
-      </div>
-      </a>
-   
-    </div>
-     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-  <div class="container">
-    <h3>Admission Requirements</h3>
-      <div class="container">
-        <h4>Fees Per Term</h4>
-      <table class="table table-bordered">
-       <thead>
-         <tr>
-           <th>Class</th>
-           <th>Day</th>
-           <th>Boarding</th>
-         </tr>
-        </thead>
-         <tbody>
-         <tr>
-           <td>S.1</td>
-           <td>180,000/=</td>
-           <td>370,000/=</td>
-         </tr>
-         <tr>
-          <td>S.2</td>
-          <td>180,000/=</td>
-          <td>370,000/=</td>
-        </tr>
-        <tr>
-          <td>S.3</td>
-          <td>180,000/=</td>
-          <td>370,000/=</td>
-        </tr>
-        <tr>
-          <td>S.4</td>
-          <td>180,000/=</td>
-          <td>370,000/=</td>
-        </tr>
-        <tr>
-          <td>S.5</td>
-          <td>200,000/=</td>
-          <td>400,000/=</td>
-        </tr>
-        <tr>
-          <td>S.6</td>
-          <td>200,000/=</td>
-          <td>400,000/=</td>
-        </tr>
-        </tbody>
-        </table>
-      </div>
-    
-    <div class="container">
-      <h2>General Requirements</h2>       
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Items</th>
-            <th>Rates</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Uniform</td>
-            <td>96,000/= (Boarding) & 83,000/= (Day) all obtained from school</td>
-          </tr> 
-          <tr>
-            <td>School identity Card</td>
-            <td>5,000/=</td>
-          </tr>
-          <tr>
-            <td>Vistation Card</td>
-            <td>5,000/= </td>
-          </tr>
-          <tr>
-            <td>Literature Book</td>
-            <td>15,000/=</td>
-          </tr>
-          <tr>
-            <td>School Magazine</td>
-            <td>15000/=</td>
-          </tr>
-          <tr>
-            <td>Photos &file</td>
-            <td>5000/= to be paid in cash at school</td>
-          </tr>   
-          <tr>
-            <td>Sports development contribution</td>
-            <td>10,000/= to be paid in cash on reporting day</td>
-          </tr>
-          <tr>
-            <td>admision</td>
-            <td>20,000/=</td>
-          </tr>
-          <tr>
-            <td>Black compound skirts/trousers</td>
-            <td>for boarding sstudents</td>
-          </tr>
-          <tr>
-            <td>1 bag of cement</td>
-            <td>Brought on reporting Day</td>
-          </tr>
-          <tr>
-            <td>Black closed shoes and white stockings</td>
-            <td>Both boys and Girls</td>
-          </tr>
-          <tr>
-            <td>Bed Contribution</td>
-            <td>50,000/= for boarders</td>
-          </tr>
-          <tr>
-            <td>Black Belts</td>
-            <td>Boys</td>
-          </tr>
-          <tr>
-            <td>Mathematical sets and scientific calculators</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>12 counter Books</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Dictionary</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Good news Bible</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ICT Fees</td>
-            <td>30,000/= (A'Level students offering ICT</td>
-          </tr>
-          <tr>
-            <td>Laboratory Fees</td>
-            <td>50,000/=, for A'Level science students Only</td>
-          </tr>
-          
-        </tbody>
-      </table>
-
-      <p>NB: All payments for fees are to be made in any of the following bank accounts</p>
-      <h2>POSTBANK A/C NO. 1630024000036</h2>
-      <h2>CENTENARY BANK A/C NO. 4720600044</h2>
-      <h2>FINANCE TRUST BANK A/C NO. 307206000020</h2>
-      <P>N.B: payment for school fees can also be made simple by use of school pay. Get your school pay number from bursar's office.</P>
-    </div>
-
   </div>
-    
+  </div>
+  </div>
+<div class="container row">
+  <div class="card-body">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15954.82993488524!2d34.03470036700211!3d1.3520608619461532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1778ee8c96fa246b%3A0x1213eb353e282e76!2s922V%2BR9G%20Bukedea%20Lifeline%20Secondary%20School%2C%20Bukedea!3m2!1d1.3520554999999999!2d34.043455099999996!5e0!3m2!1sen!2sug!4v1634332345462!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="card-body bg-light rounded mb-3 mt-3 ml-8 mr-0">
+<h2>Contact Us</h2>
+<h4><i class="fas fa-map-marker-alt fa-2x mb-3"></i>  P.O. BOX, 267, KUMI</h4>
+<h4><i class="fas fa-phone-alt fa-2x mb-5"></i> 0776978867 (HM) <br> 0775276111 (DIR)</h4>
+<h4><i class="fas fa-envelope fa-2x"></i>  bukedealifeliness267@gmail.com</h4>
+
+</div>
+</div>
 
 <!--footer-->
 <footer class="page-footer font-small bg-dark text-white pt-4">
@@ -313,7 +157,8 @@
       </div>
     </div>
     </div>
-        <!-- Social buttons -->
+    
+    <!-- Social buttons -->
     <div class="container">
       <div class="wrapper">
         <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>

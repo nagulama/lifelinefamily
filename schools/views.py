@@ -36,3 +36,5 @@ def Seniorsix(request):
     return render(request, 'schools/Seniorsix.html')
 def Online(request):
     return render(request, 'schools/Online.html')
+def contact(request):
+    return render(request, 'schools/contact.html')
